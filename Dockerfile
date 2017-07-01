@@ -9,7 +9,7 @@ MAINTAINER Paul Barrett  "pbarrett@bitsystems.com.au"
 RUN apt-get update
 
 # Install dependencies
-RUN apt-get install -y mosquitto mosquitto-clients unzip
+RUN apt-get install -y mosquitto mosquitto-clients unzip wget
 
 # Install presence server
 RUN mkdir -p /opt/presence \
