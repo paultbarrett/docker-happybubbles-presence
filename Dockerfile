@@ -19,7 +19,6 @@ RUN mkdir -p /opt/presence \
     && rm presence_linux_arm.zip
     
 # Setup system service
-
 ADD presence.service /etc/systemd/system/
 RUN systemctl enable presence.service
 
