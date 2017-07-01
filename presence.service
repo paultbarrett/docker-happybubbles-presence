@@ -1,0 +1,12 @@
+[Unit]
+Description=presence
+
+[Service]
+ExecStart=/opt/presence/presence -http_host_path=0.0.0.0:3000
+WorkingDirectory=/opt/presence
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
